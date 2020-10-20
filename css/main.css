@@ -359,6 +359,8 @@ footer {
 /* Projects page --------------------------------------------------------- */
 #projects .panel {
   margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
 }
 
 #projects .panel-default {
