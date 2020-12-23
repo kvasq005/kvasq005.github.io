@@ -445,7 +445,6 @@ dd {
 /* Customize container */
 .container {
   display: table;
-  max-width: 730px;
 }
 .row {
   display: table-row;
