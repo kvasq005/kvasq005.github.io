@@ -78,6 +78,7 @@ p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
 p {
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  color: #20364c;
 }
 
 blockquote {
@@ -334,8 +335,6 @@ nav {
 
 /* Projects page --------------------------------------------------------- */
 #projects .panel {
-  margin-left: 2rem;
-  margin-right: 2rem;
   text-align: center;
 }
 
@@ -378,6 +377,8 @@ nav {
 
 #projects .panel-footer p.title {
   height:6.6rem;
+  color: #1585cf;
+  font-weight: 500;
 }
 
 
@@ -506,6 +507,11 @@ dd {
 /* sets the link to the width of the entire panel title */
 .panel-title>a {
   display: block;
+}
+
+.panel-title>a:hover {
+  border-bottom: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 /* Back to top button */
