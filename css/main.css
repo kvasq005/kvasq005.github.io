@@ -16,26 +16,11 @@ body {
   cursor: pointer;
 }
 
-/* Font style */
+/* Typography */
 .montserrat {
   font-family: "Montserrat", Helvetica, sans-serif !important;
 }
 
-/* Degree area -------------------------------------------------------------------- */
-#education {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#education li {
-  margin-bottom: 1rem;
-}
-
-.university {
-  color: gray;
-}
-
-/* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Helvetica, sans-serif;
   color: #20364c;
@@ -51,18 +36,32 @@ h2, h3 {
   color: slategray;
 }
 
+h3 {
+  position: relative;
+}
+
+h3 span {
+  background-color: white;
+  padding-right: 10px;
+}
+
+h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 2px solid slategray;
+  z-index: -1;
+}
+
 h4 {
   text-transform: uppercase;
 }
 
 h4, h5, h6 {
   color: slategray !important;
-}
-
-.panel-heading h5 {
-  font-style: italic;
-  font-weight: 500;
-  color: #1585cf !important;
 }
 
 #projects .panel-heading h5 {
@@ -76,8 +75,10 @@ p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
   font-weight: 400;
 }
 
-dt {
-  font-weight: 600;
+p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #20364c;
 }
 
 blockquote {
@@ -91,32 +92,10 @@ blockquote blockquote {
   font-style: italic;
 }
 
-cite {
-  font-size: 1.5rem !important;
-  display: block;
-  margin-top: 1rem;
-}
-
-p {
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
-
 blockquote footer {
   margin-top: 1.5rem;
   margin-left: 2rem;
   text-indent: -1.8rem;
-}
-
-.publications {
-  list-style-type: none;
-  padding-left: 2.5rem;
-}
-
-.publications li {
-  margin-left: 2rem;
-  text-indent: -2.5rem;
-  ;
 }
 
 /* Links */
@@ -130,6 +109,20 @@ blockquote footer {
   border-bottom: 1px dashed #1585cf;
   text-decoration: none;
   padding-bottom: 2px;
+}
+
+#link-to-docs,
+#link-to-teaching-philosophy {
+  color: #1585cf;
+}
+
+#link-to-docs:hover,
+#link-to-docs:active,
+#link-to-docs:visited,
+#link-to-docs:focus {
+  border: 1px solid #1585cf !important;
+  padding-bottom: 6px !important;
+  background: transparent !important;
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */
@@ -146,9 +139,39 @@ blockquote footer {
   text-align: center;
 }
 
+#email {
+  color: #20364c;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 iframe {
   padding: 3px;
   border: 1px solid lightgray;
+}
+
+/* Format the footer ---------------------------------------------------------- */
+footer {
+  padding-bottom: 2rem;
+}
+
+/* Format the social-professional network icons ------------------------------ */
+.social-icons {
+  list-style-type: none;
+}
+
+.social-icons li {
+  padding-left: 2rem;
+  display: inline-block;
+}
+
+.social-icons li a {
+  color: #1585cf;
+}
+
+.social-icons li a:hover {
+  opacity: .8;
+  text-decoration: none !important;
 }
 
 /* Format the nav  ---------------------------------------------------------- */
@@ -297,69 +320,21 @@ nav {
   height: 45px !important;
 }
 
-#link-to-docs,
-#link-to-teaching-philosophy {
-  color: #1585cf;
-}
+/* Publications */
 
-#link-to-docs:hover,
-#link-to-docs:active,
-#link-to-docs:visited,
-#link-to-docs:focus {
-  border: 1px solid #1585cf !important;
-  padding-bottom: 6px !important;
-  background: transparent !important;
-}
-
-/* Setting Lines after headers */
-h3 {
-  position: relative;
-}
-
-h3 span {
-  background-color: white;
-  padding-right: 10px;
-}
-
-h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0.5em;
-  border-top: 2px solid slategray;
-  z-index: -1;
-}
-
-/* Format the footer ---------------------------------------------------------- */
-footer {
-  padding-bottom: 2rem;
-}
-
-/* Format the social-professional network icons ------------------------------ */
-.social-icons {
+.publications {
   list-style-type: none;
+  padding-left: 2.5rem;
 }
 
-.social-icons li {
-  padding-left: 2rem;
-  display: inline-block;
-}
-
-.social-icons li a {
-  color: #1585cf;
-}
-
-.social-icons li a:hover {
-  opacity: .8;
-  text-decoration: none !important;
+.publications li {
+  margin-left: 2rem;
+  text-indent: -2.5rem;
+  ;
 }
 
 /* Projects page --------------------------------------------------------- */
 #projects .panel {
-  margin-left: 2rem;
-  margin-right: 2rem;
   text-align: center;
 }
 
@@ -367,23 +342,49 @@ footer {
   border-radius: 3px;
 }
 
-#projects .panel-default {
-  border-radius: 3px;
-}
-
-#projects .panel-heading {
+#projects .panel-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #FFFFFF;
+  padding: 1rem;
   border-bottom: none;
 }
 
-#projects .panel-heading,
-#projects .panel-footer {
-  text-align: center;
-  background: #F6F7FB;
-  padding: 2rem;
+.panel-heading h5 {
+  font-style: italic;
+  font-weight: 500;
+  color: #1585cf !important;
 }
 
 #projects .panel-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #FFFFFF;
+  padding: 0rem 2rem 1rem;
   border-top: none;
+}
+
+#projects .panel-footer p {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#projects .panel-footer p.title {
+  height:6.6rem;
+  color: #1585cf;
+  font-weight: 500;
+}
+
+
+#projects .panel-footer a.title:hover {
+  border-bottom: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 #projects .panel-heading h5 {
@@ -395,6 +396,18 @@ footer {
 
 .panel-default .panel-heading a:hover {
   padding-bottom: 0px !important;
+}
+
+.panel-body {
+  padding: 2rem;
+}
+
+#projects .panel:hover {
+   box-shadow: 3px 3px 10px lightgray;
+}
+
+.panel-title {
+   font-weight: bold !important;
 }
 
 /* All Links panels ---------------------------------------------- */
@@ -430,6 +443,17 @@ dd {
 
 /* Narrow the viewport ----------------------------------------------- */
 /* Customize container */
+.container {
+  display: table;
+  max-width: 730px;
+}
+.row {
+  display: table-row;
+}
+.col {
+  display: table-col;
+}
+
 @media only screen and (min-width: 767px) {
   .container {
     max-width: 730px;
@@ -444,6 +468,8 @@ dd {
     max-width: 900px;
   }
 }
+
+
 
 /* Accordion panels ----------------------------------------------------- */
 /* plus glyph for showing collapsible panels */
@@ -483,6 +509,11 @@ dd {
   display: block;
 }
 
+.panel-title>a:hover {
+  border-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 /* Back to top button */
 
 /* Back to top button ----------------------------------------------------- */
@@ -505,4 +536,13 @@ dd {
 #topper:hover {
   background-color: #1585cf;
   opacity: .8;
+}
+
+/* test */
+.row {
+  display: table-row;
+}
+
+.col {
+  display: table-cell;
 }
