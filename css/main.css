@@ -154,13 +154,11 @@ footer {
 /* Format the social-professional network icons ------------------------------ */
 .social-icons {
   list-style-type: none;
-  text-align: center;
 }
 
 .social-icons li {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: inline;
+  padding-left: 2rem;
+  display: inline-block;
 }
 
 .social-icons li a {
