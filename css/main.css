@@ -197,18 +197,15 @@ nav {
 .nav .montserrat:hover,
 .nav .montserrat:focus-within,
 .nav .montserrat:focus,
+.nav .montserrat:active,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus-within,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:active {
   background: white !important;
   border-radius: 1px;
   color: #1585cf !important;
   border-bottom: none;
-}
-
-.navbar-default .navbar-nav>li>a:active {
-  background: white !important;
-  color: #1585cf !important;
 }
 
 @media only screen and (min-width: 768px) {
