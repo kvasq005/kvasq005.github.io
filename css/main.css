@@ -203,6 +203,7 @@ nav {
   background: white !important;
   border-radius: 1px;
   color: #20364c !important;
+  border-bottom: 1px dashed #20364c;
 }
 
 .navbar-default .navbar-nav>li>a:active {
