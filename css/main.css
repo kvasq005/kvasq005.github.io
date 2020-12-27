@@ -197,9 +197,9 @@ nav {
 .nav .montserrat:hover,
 .nav .montserrat:focus-within,
 .nav .montserrat:focus,
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus-within,
-.navbar-inverse .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus-within,
+.navbar-default .navbar-nav>li>a:focus {
   background: white !important;
   border-radius: 1px;
   color: #1585cf !important;
@@ -208,6 +208,7 @@ nav {
 
 .navbar-default .navbar-nav>li>a:active {
   background: white !important;
+  color: #1585cf !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -242,10 +243,10 @@ nav {
     left: calc(50% - 10px);
     bottom: 0;
     border-width: 10px 10px 0 10px;
-    border-color: #20364c transparent transparent transparent;
+    border-color: #1585cf transparent transparent transparent;
   }
 
-  .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
+  .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
