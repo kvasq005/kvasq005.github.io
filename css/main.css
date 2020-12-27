@@ -229,7 +229,7 @@ nav {
     position: relative;
   }
 
-  .hvr-bubble-bottom:before {
+  .hvr-bubble-bottom:before, .hvr-bubble-bottom:active:before {
     pointer-events: none;
     position: absolute;
     z-index: -1;
