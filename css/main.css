@@ -112,17 +112,49 @@ blockquote footer {
   color: #1585cf;
 }
 
-#link-to-docs:hover,
 #link-to-docs:active,
-#link-to-docs:visited,
-#link-to-docs:focus {
+#link-to-docs:visited {
   border: 1px solid #1585cf !important;
   padding-bottom: 6px !important;
-  background: transparent !important;
+  background: transparent;
+}
+
+#link-to-docs:hover,
+#link-to-docs:focus {
+  color: #FFFFFF !important;
+  background-color: #1585cf;
+}
+
+.btn {
+  height: 34px;
+}
+
+.btn-about {
+  width: 125px;
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */
-#title {
+#name {
+  color: #20364c;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+#pronouns {
+  color: gray;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#email {
+  color: #20364c;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#source {
   color: #20364c;
   margin-top: 2rem;
   font-weight: 600;
@@ -130,14 +162,8 @@ blockquote footer {
   text-align: center;
 }
 
-#program {
+#pubdate {
   color: gray;
-  text-align: center;
-}
-
-#email {
-  color: #20364c;
-  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -145,6 +171,7 @@ iframe {
   padding: 3px;
   border: 1px solid lightgray;
 }
+
 
 /* Format the footer ---------------------------------------------------------- */
 footer {
@@ -176,8 +203,8 @@ nav {
   padding-bottom: 2rem;
 }
 
-.navbar-default{
-  background-color: #FFFFFF;
+.navbar-default {
+  color: #FFFFFF;
   border-color: #e7e7e7;
 }
 
@@ -190,16 +217,13 @@ nav {
   border-color: #ddd;
   background-color: #ffffff;
 }
+
 .navbar-default .navbar-toggle .icon-bar{
   background-color: #20364c;
 }
 
-.nav .montserrat:hover,
-.nav .montserrat:focus-within,
-.nav .montserrat:focus,
 .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus-within,
-.navbar-default .navbar-nav>li>a:focus{
+.navbar-default .navbar-nav>li>a:focus {
   background: white !important;
   border-radius: 1px;
   color: #1585cf !important;
@@ -242,7 +266,7 @@ nav {
     left: calc(50% - 10px);
     bottom: 0;
     border-width: 10px 10px 0 10px;
-    border-color: #1585cf transparent transparent transparent;
+    border-color: white transparent transparent transparent;
   }
 
   .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
@@ -253,7 +277,7 @@ nav {
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-    color: #1585cf !important;
+    color: darkslategray !important;
   }
 }
 
@@ -280,7 +304,6 @@ nav {
   /* background: white; */
   border-radius: 2px;
   color: #1585cf;
-
 }
 
 .navbar .dropdown-menu {
