@@ -138,19 +138,18 @@ blockquote footer {
   color: #20364c;
   margin-top: 2rem;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 #pronouns {
   color: gray;
-  font-size: 1.8rem;
   text-align: center;
 }
 
 #email {
   color: #20364c;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
