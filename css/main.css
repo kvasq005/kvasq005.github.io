@@ -123,10 +123,7 @@ blockquote footer {
 #link-to-docs:focus {
   color: #FFFFFF !important;
   background-color: #1585cf;
-}
-
-.btn {
-  height: 34px;
+  padding-bottom: 6px !important;
 }
 
 .btn-about {
