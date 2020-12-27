@@ -206,7 +206,7 @@ nav {
   border-bottom: none;
 }
 
-.navbar-default .navbar-nav>li>a:active{
+.navbar-default .navbar-nav>li:active>a{
   color: #1585cf !important;
 }
 
