@@ -112,32 +112,45 @@ blockquote footer {
   color: #1585cf;
 }
 
-#link-to-docs:hover,
 #link-to-docs:active,
 #link-to-docs:visited,
 #link-to-docs:focus {
   border: 1px solid #1585cf !important;
   padding-bottom: 6px !important;
-  background: transparent !important;
+  background: transparent;
+}
+
+#link-to-docs:hover {
+  color: #FFFFFF !important;
+  background-color: #1585cf;
+}
+
+.btn {
+  height: 34px;
+}
+
+.btn-about {
+  width: 125px; 
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */
-#title {
+#name {
   color: #20364c;
   margin-top: 2rem;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 
-#program {
+#pronouns {
   color: gray;
+  font-size: 1.8rem;
   text-align: center;
 }
 
 #email {
   color: #20364c;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -158,6 +171,7 @@ iframe {
   padding: 3px;
   border: 1px solid lightgray;
 }
+
 
 /* Format the footer ---------------------------------------------------------- */
 footer {
