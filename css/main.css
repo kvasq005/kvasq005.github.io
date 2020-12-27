@@ -279,6 +279,8 @@ nav {
 .active {
   /* background: white; */
   border-radius: 2px;
+  color: #1585cf;
+
 }
 
 .navbar .dropdown-menu {
