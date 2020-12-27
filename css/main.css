@@ -197,15 +197,17 @@ nav {
 .nav .montserrat:hover,
 .nav .montserrat:focus-within,
 .nav .montserrat:focus,
-.nav .montserrat:active,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus-within,
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:active {
+.navbar-default .navbar-nav>li>a:focus{
   background: white !important;
   border-radius: 1px;
   color: #1585cf !important;
   border-bottom: none;
+}
+
+.navbar-default .navbar-nav>li>a:active{
+  color: #1585cf !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -227,7 +229,7 @@ nav {
     position: relative;
   }
 
-  .hvr-bubble-bottom:before, .hvr-bubble-bottom:active:before {
+  .hvr-bubble-bottom:before {
     pointer-events: none;
     position: absolute;
     z-index: -1;
@@ -243,20 +245,16 @@ nav {
     border-color: #1585cf transparent transparent transparent;
   }
 
-  .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before {
+  .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
 }
 
 @media (max-width: 767px) {
-  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-    color: darkslategray !important;
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #1585cf !important;
   }
-}
-
-.navbar-inverse {
-  background: #20364c;
 }
 
 .navbar-brand {
