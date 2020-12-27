@@ -141,6 +141,19 @@ blockquote footer {
   text-align: center;
 }
 
+#source {
+  color: #20364c;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#pubdate {
+  color: gray;
+  text-align: center;
+}
+
 iframe {
   padding: 3px;
   border: 1px solid lightgray;
