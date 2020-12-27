@@ -242,7 +242,7 @@ nav {
     left: calc(50% - 10px);
     bottom: 0;
     border-width: 10px 10px 0 10px;
-    border-color: white transparent transparent transparent;
+    border-color: #20364c transparent transparent transparent;
   }
 
   .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
