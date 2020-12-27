@@ -113,14 +113,14 @@ blockquote footer {
 }
 
 #link-to-docs:active,
-#link-to-docs:visited,
-#link-to-docs:focus {
+#link-to-docs:visited {
   border: 1px solid #1585cf !important;
   padding-bottom: 6px !important;
   background: transparent;
 }
 
-#link-to-docs:hover {
+#link-to-docs:hover,
+#link-to-docs:focus {
   color: #FFFFFF !important;
   background-color: #1585cf;
 }
@@ -130,7 +130,7 @@ blockquote footer {
 }
 
 .btn-about {
-  width: 125px; 
+  width: 125px;
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */
