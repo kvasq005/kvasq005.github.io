@@ -138,19 +138,18 @@ blockquote footer {
   color: #20364c;
   margin-top: 2rem;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 #pronouns {
   color: gray;
-  font-size: 1.8rem;
   text-align: center;
 }
 
 #email {
   color: #20364c;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -203,24 +202,35 @@ nav {
   padding-bottom: 2rem;
 }
 
+.navbar-default {
+  color: #FFFFFF;
+  border-color: #e7e7e7;
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #20364c;
   font-weight: 500;
 }
 
-.nav .montserrat:hover,
-.nav .montserrat:focus-within,
-.nav .montserrat:focus,
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus-within,
-.navbar-inverse .navbar-nav>li>a:focus {
-  background: white !important;
-  border-radius: 1px;
-  color: #20364c !important;
+.navbar-default .navbar-toggle{
+  border-color: #ddd;
+  background-color: #ffffff;
 }
 
-.navbar-default .navbar-nav>li>a:active {
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #20364c;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
   background: white !important;
+  border-radius: 1px;
+  color: #1585cf !important;
+  border-bottom: none;
+}
+
+.navbar-default .navbar-nav>li:active>a{
+  color: #1585cf !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -265,19 +275,15 @@ nav {
 }
 
 @media (max-width: 767px) {
-  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
     color: darkslategray !important;
   }
 }
 
-.navbar-inverse {
-  background: #20364c;
-}
-
 .navbar-brand {
-  font-size: 2.15rem !important;
+  font-size: 2.4rem !important;
   font-weight: 500;
-  color: white !important;
+  color: #20364c !important;
 }
 
 /* Navbar link size */
@@ -296,6 +302,7 @@ nav {
 .active {
   /* background: white; */
   border-radius: 2px;
+  color: #1585cf;
 }
 
 .navbar .dropdown-menu {
