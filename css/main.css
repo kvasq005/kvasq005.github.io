@@ -56,8 +56,13 @@ h3:after {
   z-index: -1;
 }
 
-h4 {
-  text-transform: uppercase;
+h4>a {
+  color: slategray !important;
+  font-size: 1.8rem;
+}
+
+h4>a:hover {
+  border-bottom: none !important;
 }
 
 h4, h5, h6 {
@@ -123,10 +128,7 @@ blockquote footer {
 #link-to-docs:focus {
   color: #FFFFFF !important;
   background-color: #1585cf;
-}
-
-.btn {
-  height: 34px;
+  padding-bottom: 6px !important;
 }
 
 .btn-about {
