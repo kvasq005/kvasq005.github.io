@@ -372,7 +372,7 @@ nav {
 }
 
 .panel-body {
-  padding: 2rem;
+  padding: 1rem 0rem;
 }
 
 .panel-heading h5 {
@@ -383,6 +383,10 @@ nav {
 
 .panel-title {
    font-weight: bold !important;
+}
+
+.img-thumbnail {
+  border: 0px;
 }
 
 /* Panel Links */
@@ -428,9 +432,9 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   background: #FFFFFF;
-  padding: 0rem 2rem 1rem;
+  padding: 0rem 1.5rem 1rem;
   border-top: none;
 }
 
@@ -445,6 +449,12 @@ nav {
   height:6.6rem;
   color: #1585cf;
   font-weight: 500;
+  margin: 0 0 1rem;
+}
+
+#projects .panel-footer p.pub {
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
 }
 
 #projects .panel-footer a.title:hover {
