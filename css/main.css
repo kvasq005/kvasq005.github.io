@@ -144,6 +144,10 @@ blockquote footer {
   text-align: center;
 }
 
+#emphasis {
+  color: #1585cf;
+}
+
 #pronouns {
   color: gray;
   text-align: center;
