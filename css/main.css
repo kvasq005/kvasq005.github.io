@@ -447,7 +447,7 @@ nav {
   vertical-align: middle;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #projects .panel-footer p.title {
