@@ -551,7 +551,7 @@ dd {
 
   /* Remove the padding we set earlier */
   .container {
-    max-width: 900px;
+    max-width: 1000px;
   }
 }
 
