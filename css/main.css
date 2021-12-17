@@ -451,10 +451,11 @@ nav {
 }
 
 #projects .panel-footer p.title {
-  height:6.6rem;
+  height:4rem;
   color: #1585cf;
   font-weight: 500;
   margin: 0 0 1rem;
+  font-size: 1.3rem;
 }
 
 #projects .panel-footer p.pub {
