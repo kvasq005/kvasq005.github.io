@@ -105,9 +105,14 @@ blockquote footer {
   font-weight: 500;
 }
 
+#main-container a.btn {
+  color: slategray;
+  font-weight: 250;
+}
+
 #main-container a:hover {
   color: #1585cf;
-  border-bottom: 1px dashed #1585cf;
+  border-bottom: 1px solid #1585cf;
   text-decoration: none;
   padding-bottom: 2px;
 }
@@ -119,7 +124,7 @@ blockquote footer {
 
 #link-to-docs:active,
 #link-to-docs:visited {
-  border: 1px solid #1585cf !important;
+  border: 1px solid silver !important;
   padding-bottom: 6px !important;
   background: transparent;
 }
@@ -127,7 +132,7 @@ blockquote footer {
 #link-to-docs:hover,
 #link-to-docs:focus {
   color: #FFFFFF !important;
-  background-color: #1585cf;
+  background-color: slategray;
   padding-bottom: 6px !important;
 }
 
@@ -452,7 +457,7 @@ nav {
 
 #projects .panel-footer p.title {
   height:5rem;
-  color: #1585cf;
+  color: #20364c;
   font-weight: 500;
   margin: 0 0 1rem;
   font-size: 1.25rem;
@@ -461,6 +466,7 @@ nav {
 #projects .panel-footer p.pub {
   font-size: 1.25rem;
   margin: 0 0 1rem;
+  color: slategray;
 }
 
 #projects .panel-footer a.title:hover {
@@ -565,7 +571,7 @@ dd {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #1585cf;
+  background-color: slategray;
   color: white;
   padding: 12px 6px 12px 6px;
   border-radius: 4px 0 0 4px;
@@ -574,6 +580,6 @@ dd {
 }
 
 #topper:hover {
-  background-color: #1585cf;
+  background-color: slategray;
   opacity: .8;
 }
