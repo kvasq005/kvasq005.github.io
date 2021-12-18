@@ -81,6 +81,11 @@ p {
   color: #20364c;
 }
 
+p.intro {
+  padding: 10px 50px;
+  line-height: 2;
+}
+
 blockquote {
   border-left-color: slategray;
   color: slategray;
@@ -131,9 +136,10 @@ blockquote footer {
 
 #link-to-docs:hover,
 #link-to-docs:focus {
-  color: #FFFFFF !important;
-  background-color: slategray;
+  color: slategray !important;
+  background-color: transparent;
   padding-bottom: 6px !important;
+  box-shadow: 3px 3px 10px lightgray;
 }
 
 .btn-about {
